@@ -1,0 +1,11 @@
+{
+    "require": {
+        "h4cc/wkhtmltopdf-amd64": "0.12.x",
+        "knplabs/knp-snappy": "^1.0"
+    },
+
+  	"require-dev": {
+    	"heroku/heroku-buildpack-php": "*"
+  	}
+
+}
