@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script>
+		$(document).ready(function(){
+            var apiUrl = 'https://dhtml2pdf.herokuapp.com/api.php';
+			$("#a-pdf-binary").click(function(e){
+                e.preventDefault();
+                var url = $('#input-pdf-binary').val();
+                if( url ) {
+                    console.log(url);
+                    $.ajax({
+                        type: "GET",
+                        url: apiUrl + "?url=" + url +"&result_type=binary",
+                        success: function(data){
+                            console.log(data);
+                            $('#pdf-binary').show();
+                            $('#pdf-binary').val( data );
+                        },
+                        error: function(err) {
+                            console.log(err);
+                        }
+                    });
+                }
+			});
+            $("#a-pdf-show").click(function() {
+                $("#a-pdf-show").attr('href', apiUrl + '?url=' + $("#input-pdf-show").val() + '&result_type=show' );
+            });
+            $("#a-pdf-download").click(function() {
+                $("#a-pdf-download").attr('href', apiUrl + '?url=' + $("#input-pdf-download").val() + '&result_type=download' );
+            })
+
+		});
+	</script>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .width-100 {
+            width: 100%;
+        }
+        .wrapper {
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row text-center">
+            <h1>Try out the API!</h1>
+        </div>
+        <div class="row text-center">
+            <div class="col-10">
+                <input id="input-pdf-show" class="width-100" type="text" value="https://www.github.com" />
+            </div>
+            <div class="col-2">
+                <a id="a-pdf-show" href="" target="_blank">Show PDF</a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-10">
+                <input id="input-pdf-download" class="width-100" type="text" value="https://stackoverflow.com/" />
+            </div>
+            <div class="col-2">
+                <a id="a-pdf-download" href="">Download PDF</a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-10">
+                <input id="input-pdf-binary" class="width-100" type="text" value="https://www.w3schools.com/" />
+            </div>
+            <div class="col-2">
+                <a id="a-pdf-binary" href="">Show binary</a>
+            </div>
+            <textarea style="display: none" id="pdf-binary"></textarea>
+        </div>
+    </div>
+
+</body>
+</html>
+
+</div>

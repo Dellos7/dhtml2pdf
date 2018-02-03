@@ -79,6 +79,7 @@ class ApiUtils {
     }
 
     public static function pdfBinary( $pdfBinary ) {
+        header('Access-Control-Allow-Origin: *');
         echo $pdfBinary;
         exit(0);
     }
