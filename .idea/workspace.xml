@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiUtils.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApiUtils.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DHtml2Pdf/ApiUtils.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="542">
+              <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
               <folding>
                 <element signature="e#6#83#0#PHP" expanded="true" />
               </folding>
@@ -74,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DHtml2Pdf.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DHtml2Pdf.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DHtml2Pdf/DHtml2Pdf.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -146,9 +146,9 @@
         <option value="$PROJECT_DIR$/src/DHtml2Pdf/Html2Pdf.php" />
         <option value="$PROJECT_DIR$/src/DHtml2Pdf/Exception/WkhtmltopdfDriverNotFoundException.php" />
         <option value="$PROJECT_DIR$/src/autoload.php" />
-        <option value="$PROJECT_DIR$/src/DHtml2Pdf/ApiUtils.php" />
         <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/src/DHtml2Pdf/DHtml2Pdf.php" />
+        <option value="$PROJECT_DIR$/src/DHtml2Pdf/ApiUtils.php" />
       </list>
     </option>
   </component>
@@ -310,12 +310,12 @@
       <updated>1517618266647</updated>
       <workItem from="1517618267848" duration="1481000" />
       <workItem from="1517620504303" duration="779000" />
-      <workItem from="1517662687966" duration="6708000" />
+      <workItem from="1517662687966" duration="6917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8968000" />
+    <option name="totallyTimeSpent" value="9177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -495,16 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-          <folding>
-            <element signature="e#6#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -529,16 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DHtml2Pdf/ApiUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -557,6 +537,26 @@
           <folding>
             <element signature="e#6#83#0#PHP" expanded="true" />
             <element signature="e#156#215#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding>
+            <element signature="e#6#83#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DHtml2Pdf/ApiUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+          <folding>
+            <element signature="e#6#83#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

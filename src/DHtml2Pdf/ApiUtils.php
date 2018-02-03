@@ -63,6 +63,7 @@ class ApiUtils {
     }
 
     public static function pdfDownload( $pdfBinary, $fileName ) {
+        header('Access-Control-Allow-Origin: *');
         header('Content-Type: application/pdf');
         header('Content-Disposition: attachment; filename="' . $fileName .'.pdf"');
         echo $pdfBinary;
@@ -70,6 +71,7 @@ class ApiUtils {
     }
 
     public static function pdfShow( $pdfBinary, $fileName ) {
+        header('Access-Control-Allow-Origin: *');
         header('Content-Type: application/pdf');
         header('Content-Disposition: inline; filename="' . $fileName .'.pdf"');
         echo $pdfBinary;
@@ -87,6 +89,7 @@ class ApiUtils {
             'res' => 'error',
             'message' => $errorMessage
         );
+        header('Access-Control-Allow-Origin: *');
         header('Content-type: application/json');
         echo json_encode( $error );
     }
