@@ -10,14 +10,15 @@
                 e.preventDefault();
                 var url = $('#input-pdf-binary').val();
                 if( url ) {
-                    console.log(url);
+                    $('#pdf-binary-text').show();
                     $.ajax({
                         type: "GET",
                         url: apiUrl + "?url=" + url +"&result_type=binary",
                         success: function(data){
-                            console.log(data);
                             $('#pdf-binary').show();
-                            $('#pdf-binary').val( data );
+                            $('#pdf-binary').val(data);
+                            $('#pdf-binary-text').hide();
+                            $('#copy-to-clipboard-binary').show();
                         },
                         error: function(err) {
                             console.log(err);
@@ -31,6 +32,12 @@
             $("#a-pdf-download").click(function() {
                 $("#a-pdf-download").attr('href', apiUrl + '?url=' + $("#input-pdf-download").val() + '&result_type=download' );
             })
+            $('#copy-to-clipboard-binary').click(function() {
+                var pdfBinaryTextArea = document.querySelector('#pdf-binary');
+                pdfBinaryTextArea.select();
+                document.execCommand('copy');
+                alert('Copied PDF binary to clipboard!');
+            });
 
 		});
 	</script>
@@ -44,40 +51,84 @@
         .wrapper {
             padding: 5%;
         }
+        .github-icon {
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-image: url(
+                data:image/png;base64,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
+            );
+        }
     </style>
 </head>
 <body>
 
 <div class="wrapper">
     <div class="container">
-        <div class="row text-center">
-            <h1>Try out the API!</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>dhtml2pdf</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <section>
+                    Convert an HTML from URL to PDF.
+                </section>
+                <section>
+                    Uses the <a href="https://github.com/knplabs/snappy" target="_blank">snappy</a> image & PDF from URL generation PHP library.
+                </section>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <strong>Example. Put your own URL:</strong>
+            </div>
         </div>
         <div class="row text-center">
-            <div class="col-10">
+            <div class="col-sm-8">
                 <input id="input-pdf-show" class="width-100" type="text" value="https://www.github.com" />
             </div>
-            <div class="col-2">
+            <div class="col-sm-4">
                 <a id="a-pdf-show" href="" target="_blank">Show PDF</a>
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-10">
-                <input id="input-pdf-download" class="width-100" type="text" value="https://stackoverflow.com/" />
+            <div class="col-sm-8">
+                <input id="input-pdf-download" class="width-100" type="text" value="https://stackoverflow.com" />
             </div>
-            <div class="col-2">
+            <div class="col-sm-4">
                 <a id="a-pdf-download" href="">Download PDF</a>
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-10">
-                <input id="input-pdf-binary" class="width-100" type="text" value="https://www.w3schools.com/" />
+            <div class="col-sm-8">
+                <input id="input-pdf-binary" class="width-100" type="text" value="https://www.w3schools.com" />
             </div>
-            <div class="col-2">
+            <div class="col-sm-4">
                 <a id="a-pdf-binary" href="">Show binary</a>
             </div>
-            <textarea style="display: none" id="pdf-binary"></textarea>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p id="pdf-binary-text" class="width-100" style="display: none"><i>Waiting for the binary text to appear, this may freeze the site for some minutes, depending on the HTML length...</i></p>
+                <textarea style="display: none" rows="15" class="width-100" id="pdf-binary"></textarea>
+                <button id="copy-to-clipboard-binary" style="display: none" type="button" class="btn btn-primary">Copy to clipboard</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="https://github.com/Dellos7/dhtml2pdf" target="_blank">
+                    <i class="github-icon"></i>
+                    See in Github
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
 
 </body>
