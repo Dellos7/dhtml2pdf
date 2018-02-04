@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d7763d-ce8a-4fab-aee0-51905a6033bf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
     </list>
     <ignored path="domPdf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +41,21 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,6 +81,7 @@
         <option value="$PROJECT_DIR$/src/DHtml2Pdf/ApiUtils.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -201,12 +214,12 @@
       <workItem from="1517618267848" duration="1481000" />
       <workItem from="1517620504303" duration="779000" />
       <workItem from="1517662687966" duration="14524000" />
-      <workItem from="1517743994160" duration="200000" />
+      <workItem from="1517743994160" duration="2746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16984000" />
+    <option name="totallyTimeSpent" value="19530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -252,7 +265,11 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
+            <folding>
+              <marker date="1517747057000" expanded="true" signature="2060:2361" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+              <marker date="1517747057000" expanded="true" signature="2205:2299" placeholder="{...}" />
+              <marker date="1517747057000" expanded="true" signature="2326:2359" placeholder="{...}" />
+            </folding>
           </first_editor>
           <second_editor>
             <js_state />
@@ -263,7 +280,11 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
+            <folding>
+              <marker date="1517747057000" expanded="true" signature="2060:2361" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+              <marker date="1517747057000" expanded="true" signature="2205:2299" placeholder="{...}" />
+              <marker date="1517747057000" expanded="true" signature="2326:2359" placeholder="{...}" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -313,18 +334,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1517747057000" expanded="true" signature="2060:2361" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1517747057000" expanded="true" signature="2205:2299" placeholder="{...}" />
+            <marker date="1517747057000" expanded="true" signature="2326:2359" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
+            <folding>
+              <marker date="1517747057000" expanded="true" signature="2060:2361" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+              <marker date="1517747057000" expanded="true" signature="2205:2299" placeholder="{...}" />
+              <marker date="1517747057000" expanded="true" signature="2326:2359" placeholder="{...}" />
+            </folding>
           </first_editor>
           <second_editor>
             <js_state />
@@ -333,9 +370,13 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-            <folding />
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <folding>
+              <marker date="1517747057000" expanded="true" signature="2060:2361" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+              <marker date="1517747057000" expanded="true" signature="2205:2299" placeholder="{...}" />
+              <marker date="1517747057000" expanded="true" signature="2326:2359" placeholder="{...}" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>

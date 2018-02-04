@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+title: dhtml2pdf
+description: Simple & free PHP API that converts an HTML from URL to PDF.
