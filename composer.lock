@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acf3679e8da388d507ad0759e6e84478",
+    "content-hash": "61ea15218f7e3b906253edc5e4ab5679",
     "packages": [
         {
             "name": "knplabs/knp-snappy",

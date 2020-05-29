@@ -1,6 +1,6 @@
 {
     "require": {
-        "knplabs/knp-snappy": "^1.0"
+        "knplabs/knp-snappy": "^1.2.1"
     },
 
   	"require-dev": {
