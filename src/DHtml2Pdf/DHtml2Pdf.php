@@ -16,7 +16,8 @@ use Symfony\Component\Process\Exception\InvalidArgumentException;
 
 
 abstract class WkhtmltopdfOSDriverEnum {
-    const LINUX =  __DIR__ . '/../../vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64';
+    //const LINUX =  __DIR__ . '/../../vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64';
+    const LINUX = __DIR__ . '../../wkhtmltopdf';
     const OSX = '/usr/local/bin/wkhtmltopdf';
 }
 
