@@ -17,7 +17,7 @@ use Symfony\Component\Process\Exception\InvalidArgumentException;
 
 abstract class WkhtmltopdfOSDriverEnum {
     //const LINUX =  __DIR__ . '/../../vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64';
-    const LINUX = __DIR__ . '/../../wkhtmltopdf';
+    const LINUX = __DIR__ . '/../../lib/%s/wkhtmltopdf';
     const OSX = '/usr/local/bin/wkhtmltopdf';
 }
 
@@ -33,8 +33,10 @@ class DHtml2Pdf {
     public function getWkhtmltopdfFromCurrentOs() {
         switch ( PHP_OS ) {
             case "Linux":
-                if( file_exists( WkhtmltopdfOSDriverEnum::LINUX ) ) {
-                    return new Pdf( WkhtmltopdfOSDriverEnum::LINUX );
+                $codename = parse_ini_string(shell_exec('cat /etc/lsb-release'))['DISTRIB_CODENAME'];
+                $wkhtmltopdfPath = sprintf( WkhtmltopdfOSDriverEnum::LINUX, $codename );
+                if( file_exists( $wkhtmltopdfPath ) ) {
+                    return new Pdf( $wkhtmltopdfPath );
                 }
                 break;
             case "Darwin":
