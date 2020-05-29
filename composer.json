@@ -1,6 +1,6 @@
 {
     "require": {
-        "h4cc/wkhtmltopdf-amd64": "0.12.x",
+        "h4cc/wkhtmltopdf-amd64": "0.12.3",
         "knplabs/knp-snappy": "^1.0"
     },
 
