@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "737512b3aa9da2a4392797be6b721ad8",
+    "content-hash": "3599d8498fef3101a3e044b84e6aac65",
     "packages": [
         {
             "name": "h4cc/wkhtmltopdf-amd64",
-            "version": "0.12.3",
+            "version": "0.12.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h4cc/wkhtmltopdf-amd64.git",
-                "reference": "b80ce6720349e98cebac7e8a19426455805fa7e1"
+                "reference": "9ea617154cf88b81c7c0f5e5fa2d2f731ba0ae6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h4cc/wkhtmltopdf-amd64/zipball/b80ce6720349e98cebac7e8a19426455805fa7e1",
-                "reference": "b80ce6720349e98cebac7e8a19426455805fa7e1",
+                "url": "https://api.github.com/repos/h4cc/wkhtmltopdf-amd64/zipball/9ea617154cf88b81c7c0f5e5fa2d2f731ba0ae6c",
+                "reference": "9ea617154cf88b81c7c0f5e5fa2d2f731ba0ae6c",
                 "shasum": ""
             },
             "bin": [
@@ -44,7 +44,7 @@
                 "thumbnail",
                 "wkhtmltopdf"
             ],
-            "time": "2016-02-02T19:38:55+00:00"
+            "time": "2015-01-22T08:01:37+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
