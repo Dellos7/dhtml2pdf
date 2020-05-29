@@ -140,6 +140,8 @@ will perform the PHP build and deploy the APP!
 git push -u heroku master
 ```
 
+> Working currently on `heroku-16` stack and `heroku-18` stack
+
 # License
 
 [GPL 3.0 License](https://choosealicense.com/licenses/gpl-3.0/)
