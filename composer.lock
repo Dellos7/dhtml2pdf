@@ -4,26 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3599d8498fef3101a3e044b84e6aac65",
+    "content-hash": "a9e4998a3637a01d0c929a5fced72dd8",
     "packages": [
         {
             "name": "h4cc/wkhtmltopdf-amd64",
-            "version": "0.12.2.1",
+            "version": "0.12.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h4cc/wkhtmltopdf-amd64.git",
-                "reference": "9ea617154cf88b81c7c0f5e5fa2d2f731ba0ae6c"
+                "reference": "4e2ab2d032a5d7fbe2a741de8b10b8989523c95b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h4cc/wkhtmltopdf-amd64/zipball/9ea617154cf88b81c7c0f5e5fa2d2f731ba0ae6c",
-                "reference": "9ea617154cf88b81c7c0f5e5fa2d2f731ba0ae6c",
+                "url": "https://api.github.com/repos/h4cc/wkhtmltopdf-amd64/zipball/4e2ab2d032a5d7fbe2a741de8b10b8989523c95b",
+                "reference": "4e2ab2d032a5d7fbe2a741de8b10b8989523c95b",
                 "shasum": ""
             },
             "bin": [
                 "bin/wkhtmltopdf-amd64"
             ],
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "h4cc\\WKHTMLToPDF\\": ""
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL Version 3"
@@ -44,7 +49,7 @@
                 "thumbnail",
                 "wkhtmltopdf"
             ],
-            "time": "2015-01-22T08:01:37+00:00"
+            "time": "2018-01-15T06:57:33+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
