@@ -10,6 +10,8 @@ which is based in the awesome webkit-based [wkhtmltopdf and wkhtmltoimage](https
 
 Try it out here! :point_right: [https://dhtml2pdf.herokuapp.com/](https://dhtml2pdf.herokuapp.com/)
 
+> As I'm using the free Heroku containers to host the app, so it sometimes stops working because of the quota limits they have. I've created a second instance of the app (👉[https://dhtml2pdf2.herokuapp.com/](https://dhtml2pdf2.herokuapp.com/)) which you can use, however I recommend you [set up your own private Heroku instance](#Deploy-your-own-server-API) if you plan to frequently use this
+
 # The API
 
 Currently, the API is an PHP-based end point which simply
@@ -49,13 +51,18 @@ would open the generated PDF from the `https://www.github.com` site in your brow
 ## HTML
 
 Anchor to show the PDF in a new browser tab:
-```
+```html
 <a href="https://dhtml2pdf.herokuapp.com/api.php?url=https://www.github.com&result_type=show" target="_blank">Show PDF</a>
 ```
 
 Anchor to download the PDF as **my_pdf.pdf**:
+```html
+<a href="https://dhtml2pdf.herokuapp.com/api.php?url=https://www.github.com&result_type=download&file_name=my_pdf" target="_blank">Download PDF</a>
 ```
-<a href="https://dhtml2pdf.herokuapp.com/api.php?url=https://www.github.com&result_type=download&file_name=my_pdf" target="_blank">Show PDF</a>
+
+> PRO TIP: Show or download current page in PDF
+```html
+<a href="javascript:window.open('https://dhtml2pdf.herokuapp.com/api.php?url='+window.location.href+'&result_type=show', '_blank')" target="_blank">Show PDF</a>
 ```
 
 ## jQuery
@@ -135,8 +142,8 @@ will perform the PHP build and deploy the APP!
 git push -u heroku master
 ```
 
-# Roadmap
+> Working currently on `heroku-16` stack and `heroku-18` stack
 
 # License
 
-# Contribute
+[GPL 3.0 License](https://choosealicense.com/licenses/gpl-3.0/)
