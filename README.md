@@ -10,7 +10,7 @@ which is based in the awesome webkit-based [wkhtmltopdf and wkhtmltoimage](https
 
 Try it out here! :point_right: [https://dhtml2pdf.herokuapp.com/](https://dhtml2pdf.herokuapp.com/)
 
-> As I'm using the free Heroku containers to host the app, so it sometimes stops working because of the quota limits they have. I've created a second instance of the app (👉[https://dhtml2pdf2.herokuapp.com/](https://dhtml2pdf2.herokuapp.com/)) which you can use, however I recommend you set up your own private Heroku instance if you plan to frequently use this
+> As I'm using the free Heroku containers to host the app, so it sometimes stops working because of the quota limits they have. I've created a second instance of the app (👉[https://dhtml2pdf2.herokuapp.com/](https://dhtml2pdf2.herokuapp.com/)) which you can use, however I recommend you [set up your own private Heroku instance](#Deploy-your-own-server-API) if you plan to frequently use this
 
 # The API
 
