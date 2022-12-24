@@ -33,8 +33,18 @@ class DHtml2Pdf {
     public function getWkhtmltopdfFromCurrentOs() {
         switch ( PHP_OS ) {
             case "Linux":
-                $codename = parse_ini_string(shell_exec('cat /etc/lsb-release'))['DISTRIB_CODENAME'];
-                $wkhtmltopdfPath = sprintf( WkhtmltopdfOSDriverEnum::LINUX, $codename );
+                /* Ubuntu based */
+                if( file_exists("/etc/lsb-release") ){
+                    $codename = parse_ini_string(shell_exec('cat /etc/lsb-release'))['DISTRIB_CODENAME'];
+                    $wkhtmltopdfPath = sprintf( WkhtmltopdfOSDriverEnum::LINUX, $codename );
+                /* CentOS based --> https://wkhtmltopdf.org/downloads.html */
+                /* Download binary installer and:
+                    yum install xorg-x11-fonts-75dpi
+                    rpm -i /path/to/wkhtmltox-0.12.6-1.centos7.x86_64.rpm
+                */
+                } else if( file_exists( "/etc/centos-release" ) ){
+                    $wkhtmltopdfPath = "/usr/local/bin/wkhtmltopdf";
+                }
                 if( file_exists( $wkhtmltopdfPath ) ) {
                     return new Pdf( $wkhtmltopdfPath );
                 }
